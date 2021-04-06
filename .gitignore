@@ -1,0 +1,10 @@
+dt/
+zynqmp_fsbl/
+zynqmp_pmufw/
+*.elf
+*.tcl
+*.dtb
+*.dts
+Image
+*.ub
+*.BIN

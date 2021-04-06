@@ -1,0 +1,8 @@
+the_ROM_image:
+{
+	[bootloader, destination_cpu=a53-0] ./../bsp/zynqmp_fsbl.elf
+	[pmufw_image] ./../bsp/zynqmp_pmufw.elf 
+	[destination_cpu=a53-0, exception_level=el-3, trustzone] ./../bsp/bl31.elf
+	[destination_cpu=a53-0, load=0x00100000] ./../bsp/system.dtb
+	[destination_cpu=a53-0, exception_level=el-2] ./../bsp/u-boot.elf
+}
